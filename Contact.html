@@ -9,97 +9,79 @@
     <link rel="stylesheet" href="css/style.css"> <!-- conexion a css-->
 </head>
 <body> <!-- estructura en pantalla -->
-    <header id="header">
-        <div class="headerLogo">
-            <Img><img src="img/Logo 1.png" alt="Logo"></Img>
+   
+  <header>
+        
+      <input type="checkbox" id="btnMenu">
+      <label for="btnMenu"><img src="img/BTN2.png" alt=""></label>
+      <img src="img/Logo 1.png" alt="nombre de la empresa" class="logoMobile">  
+      
+      
+
+      <nav class="headerMenu">
+           <ul>
+           <li><a href="index.html">
+              <div class="textoMobile">INICIO</div>
+              <img src="img/Logo 1.png" alt="nombre de la empresa" class="logoDesktop"></a></li> <!-- links a otras páginas -->
+           <li><a href="Solutions.html">SOLUTIONS</a></li>
+           <li><a href="Blog.html">BLOG</a></li>
+           <li><a href="Events.html">EVENTS</a></li>
+           <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+       </nav>
+  </header>
+  
+  
+  <div class="content">
+
+        <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+            <h3>Contact us</h3>
+            <form action="">
+                <p>
+                    <label>FullName</label>
+                    <input type="text" name="fullname">
+                </p>
+                <p>
+                    <label>Email Adress</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label>Affair</label>
+                    <input type="text" name="affair">
+                </p>
+                <p class="block">
+                   <label>Message</label> 
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button>
+                        Send
+                    </button>
+                </p>
+            </form>
         </div>
-               <nav class="headerMenu">
+        <div class="contact-info">
+            <h4>More Info</h4>
             <ul>
-            <li><a href="index.html">Inicio</a></li> <!-- links a otras páginas -->
-            <li><a href="Product.html">Product</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Events.html">Events</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-             </ul>
-        </nav>
+                <li><i class="fas fa-map-marker-alt"></i> 11 Oriente N° 2224, Col. Azcarate, Puebla, Pue, C.P. 72501</li>
+                <li><i class="fas fa-phone"></i> (+52) 222 919 36 30</li>
+                <li><i class="fas fa-envelope-open-text"></i> contact@gestioneplus.com</li>
+            </ul>  
+            <p>Gestioneplus.com</p>
+        </div>
+    </div>
 
-    </header>
-
-    <section id="sec"> 
-        <div class="secContact" ><img src="img/Contacto.png"></div>
-    </section>
-
-    <main>
-        <div class="contact_form">
-
-            <div class="formulario">      
-              <h1>Formulario de contacto</h1>
-                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-        
-        
-                  <form action="submeter-formulario.php" method="post">       
-        
-                    
-                        <p>
-                          <label for="nombre" class="colocar_nombre">Nombre
-                            <span class="obligatorio">*</span>
-                          </label>
-                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                        </p>
-                      
-                        <p>
-                          <label for="email" class="colocar_email">Email
-                            <span class="obligatorio">*</span>
-                          </label>
-                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                        </p>
-                    
-                        <p>
-                          <label for="telefone" class="colocar_telefono">Teléfono
-                          </label>
-                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                        </p>    
-                      
-                        <p>
-                          <label for="website" class="colocar_website">Sitio web
-                          </label>
-                            <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-                        </p>    
-                      
-                        <p>
-                          <label for="asunto" class="colocar_asunto">Asunto
-                            <span class="obligatorio">*</span>
-                          </label>
-                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                        </p>    
-                      
-                        <p>
-                          <label for="mensaje" class="colocar_mensaje">Mensaje
-                            <span class="obligatorio">*</span>
-                          </label>                     
-                                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                        </p>                    
-                      
-                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-        
-                        <p class="aviso">
-                          <span class="obligatorio"> * </span>los campos son obligatorios.
-                        </p>          
-                    
-                  </form>
-            </div>  
-          </div>
-        
+</div>
 
 
-    </main>
+  <footer>
 
-    <section>
-
-
-   <footer>
-
-    <p>&copy;2022</p>
-   </footer>
+    <p id="pie">&copy;2022</p>
+  </footer>
 </body>
 </html>

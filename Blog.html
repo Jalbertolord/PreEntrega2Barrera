@@ -9,24 +9,30 @@
     <link rel="stylesheet" href="css/style.css"> <!-- conexion a css-->
 </head>
 <body> <!-- estructura en pantalla -->
-    <header id="header">
-        <div class="headerLogo">
-            <Img><img src="img/Logo 1.png" alt="Logo"></Img>
-        </div>
-               <nav class="headerMenu">
-            <ul>
-            <li><a href="index.html">Inicio</a></li> <!-- links a otras páginas -->
-            <li><a href="Product.html">Product</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Events.html">Events</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-             </ul>
-        </nav>
+    <header>
+        
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu"><img src="img/BTN2.png" alt=""></label>
+        <img src="img/Logo 1.png" alt="nombre de la empresa" class="logoMobile">  
+        
+        
 
-    </header>
+        <nav class="headerMenu">
+             <ul>
+             <li><a href="index.html">
+                <div class="textoMobile">INICIO</div>
+                <img src="img/Logo 1.png" alt="nombre de la empresa" class="logoDesktop"></a></li> <!-- links a otras páginas -->
+             <li><a href="Solutions.html">SOLUTIONS</a></li>
+             <li><a href="Blog.html">BLOG</a></li>
+             <li><a href="Events.html">EVENTS</a></li>
+             <li><a href="Contact.html">CONTACT</a></li>
+              </ul>
+         </nav>
+
+    <header>
 
     <Main id="sec"> 
-        <div class="secContact" ><img src="img/Blog.jpg"></div>
+        <img src="./img/Blog.png.jpg" class="imageMain">
     </Main>
 
     <main>
@@ -39,7 +45,7 @@
 
    <footer>
 
-    <p>&copy;2022</p>
+    <p id="pie">&copy;2022</p>
    </footer>
 </body>
 </html>

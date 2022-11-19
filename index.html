@@ -1,6 +1,6 @@
 <!DOCTYPE html>   <!-- declara el tipo de documento = html -->
 <html lang="en">    <!-- tag global = html -->
-<head>  <!-- cabeza del documentato perstaña -->
+<head>  <!-- cabeza del documentato pestaña -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +9,97 @@
     <link rel="stylesheet" href="css/style.css"> <!-- conexion a css-->
 </head>
 <body> <!-- estructura en pantalla -->
-    <header id="header">
-        <div class="headerLogo">
-            <Img><img src="img/Logo 1.png" alt="Logo"></Img>
-        </div>
-               <nav class="headerMenu">
+    <header>
+        
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu"><img src="img/BTN2.png" alt=""></label>
+        <img src="img/Logo 1.png" alt="nombre de la empresa" class="logoMobile">  
+        
+        
+
+        <nav class="headerMenu">
             <ul>
-            <li><a href="index.html">Inicio</a></li> <!-- links a otras páginas -->
-            <li><a href="Product.html">Product</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Events.html">Events</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="index.html">
+               <div class="textoMobile">INICIO</div>
+               <img src="img/Logo 1.png" alt="nombre de la empresa" class="logoDesktop"></a></li> <!-- links a otras páginas -->
+            <li><a href="Solutions.html">SOLUTIONS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Events.html">EVENTS</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
              </ul>
         </nav>
-
-    </header>
+     </header>
 
     <Main id="main"> 
-        <div class="secImage" ><img src="img/Digital SFM 2.png"></div>
+        <video src="./vid/VideoMain.mp4" autoplay loop muted class="videoMain"></video>
     </Main>
 
+    <div class="container">
+    
+        <main class="content">
+            <article class="article">
+                <h1>LEAN 4.0 DIGITAL
+                    SHOP FLOOR MANAGEMENT</h1>
+                <p>Individually scalable for all industries and their specific business sectors.
+                    Process management is not a topic that concerns only one specific department. 
+                    It is a company-wide issue. And every department has its unique processes and concerns. 
+                    Digital Shopfloor System® allows you to model your specific processes painlessly within one central system, 
+                    and so can your colleagues in other departments.</p>
+                <p>The advantages become apparent when teams and their processes are connected like nodes on a circuit board. 
+                    Now you can stream your collaboration and KPIs continuously throughout your entire company.</p>
+                
+            </article>
+
+            <article class="article">
+                <h1>Your Shop Floor Management can do better</h1>
+                <p> With our lean experts consulting we created a Digital Shop Floor solution that leaves nothing to be desired.
+                     Every board imaginable for every team and their specific needs now takes as much space as your typical 55" TV,
+                      or laptop or tablet...</p>
+                
+            </article>
+            <article class="article">
+                <h1>All Your Shop Floor Boards
+                    In The Palm Of Your Hand.</h1>
+                
+                <p>Defining a countermeasure directly at the Gemba or participating a Shop Floor Meeting from your home office, 
+                    the responsive user interface from Digital Shopfloor System brings the entire board to where you are right now.</p>
+                
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <div>
+                <img src="./img/Digital SFM 7.png" alt="" >
+                <p>Shop Floor Management 4.0</p>
+            </article>
+            <div>
+                <img src="./img/Digital SFM 6.png" alt="" >
+                <p>Superior functionality to view order information and report on your production</p>
+            </article>
+            <div>
+                <img src="./img/Digital SFM 8.png" alt="" >
+                <p>Remove the documentation burden with shop floor data collection software.</p>
+            </article>
+        </aside>
+
+        <div class="related-post">
+            Automotive
+        </div>
+        <div class="related-post">
+           Mechanical Engginering
+        </div>
+        <div class="related-post">
+            Aviation
+        </div>
+        <div class="related-post">
+           Logistics
+        </div>
+        <div class="related-post">
+           Electronics 
+        </div>
+
+    </div>
+    
     <section id= "sec1">
         <h1 class="sec1Title"> Your Shop Floor Management can do better.</h1>
         <h2 class="sec1text"> With our lean experts from Staufen consulting we created a digital Shop Floor solution that leaves nothing to be desired. Every board imaginable for every team and their specific needs now takes as much space as your typical 55" TV, or laptop or tablet...</h2>
@@ -42,9 +113,7 @@
         <h2 class="sec2Text"> Defining a countermeasure directly at the Gemba or participating a Shop Floor Meeting from your home office, the responsive user interface from ValueStreamer brings the entire board to where you are right now.</h2>
         <div class="sec2Image"></div><img src="img/Digital SFM 4.png" alt="Image">
 
-   <footer>
+   
 
-    <p>&copy;2022</p>
-   </footer>
 </body>
 </html>

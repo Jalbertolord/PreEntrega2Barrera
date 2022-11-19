@@ -1,0 +1,46 @@
+#header {
+  background: rgba(1, 19, 66, 0.884);
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  z-index: 100;
+
+}
+.headerLogo img { 
+  padding: 10px;
+  height: 50px;  
+  position: fixed;
+ display: block
+}
+
+.headerMenu { 
+    padding-left: 200px;
+}
+
+.headerMenu ul {
+  list-style: none;
+  overflow: hidden; 
+}
+
+.headerMenu ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.headerMenu  ul li a {
+  display: block;
+  padding: 10px;
+  color: rgba(214, 220, 243, 0.925);
+  text-decoration: none;
+}
+.headerMenu ul li:hover {
+  background: #528c9e;
+}
+
+
+#main{
+  height: fixed;
+  width: 100%;
+  position: center;
+  z-index: 100;
+}

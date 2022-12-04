@@ -1,0 +1,82 @@
+// Pantallas grandes
+
+@media(min-width: 1200px){
+    nav, .servicios, .footer-content, .presentacion{
+        width:60%;
+        margin:auto;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+    text-align: left;
+    }
+       
+} 
+
+
+// Pantallas medianas
+
+@media(max-width:992px) {
+    .presentacion, .tipo-servicios{
+        flex-direction: column;
+    }
+    .presentacion div{
+        text-align:center;
+        margin-bottom: 30px;
+    }
+
+    nav{
+        @include caja-flex(center, center, wrap);
+        padding-bottom: 20px;
+        padding-top:20px;
+        ul{
+            padding-left:0;
+        }
+    }
+    .header {
+        text-align: center;
+    }
+    
+    .container .content {
+        grid-column: 1 / -1;
+    }
+    .container .sidebar {
+        grid-column: 1 / 6;
+    }
+    
+    .container .related-post {
+        grid-column: 1/-1;
+    }
+    .container {
+        padding-top: 120px;
+    }
+    
+}
+
+
+ 
+// Pantallas pequeñas
+
+
+@media(max-width:442px){
+    .presentacion div{
+    text-align:center;
+    margin-bottom:30px;
+    h1, p {
+        padding:0;
+    }
+    }
+    .bodyTitle {
+    display: inline-block;
+    margin-top: 250px;
+    margin-left:  20px;
+    text-align: center;}
+       
+}

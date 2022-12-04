@@ -1,119 +1,107 @@
-<!DOCTYPE html>   <!-- declara el tipo de documento = html -->
-<html lang="en">    <!-- tag global = html -->
-<head>  <!-- cabeza del documentato pestaña -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desription" content="lean tools on site for logistics and prodution areas"> <!--Consigna SEO-->
+    <meta name="keywords" content="5whys, LEAN, GEMBA, SFM, LEADERSHIP, KAIZEN, CONTINUOS IMPROVEMENT"> <!--Consigna SEO-->
     <title>GestionĒ+ | Digital Shopfloor Management</title>
     <link rel="icon" href="img/Icon Logo.png"> <!-- icono reducido en pesataña-->
-    <link rel="stylesheet" href="css/style.css"> <!-- conexion a css-->
+    <link rel="stylesheet" href="scss/main.css">
+    <script src="https://kit.fontawesome.com/8a815a169a.js" crossorigin="anonymous"></script>
 </head>
-<body> <!-- estructura en pantalla -->
-    <header>
-        
-        <input type="checkbox" id="btnMenu">
-        <label for="btnMenu"><img src="img/BTN2.png" alt=""></label>
-        <img src="img/Logo 1.png" alt="nombre de la empresa" class="logoMobile">  
-        
-        
 
-        <nav class="headerMenu">
+<body>
+    
+    <header id="menu">         
+        <nav>
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="logo" width="200" height="50"></a>
             <ul>
-            <li><a href="index.html">
-               <div class="textoMobile">INICIO</div>
-               <img src="img/Logo 1.png" alt="nombre de la empresa" class="logoDesktop"></a></li> <!-- links a otras páginas -->
-            <li><a href="Solutions.html">SOLUTIONS</a></li>
-            <li><a href="Blog.html">BLOG</a></li>
-            <li><a href="Events.html">EVENTS</a></li>
-            <li><a href="Contact.html">CONTACT</a></li>
-             </ul>
-        </nav>
-     </header>
+                <li><a href="./pages/Solutions.html">SOLUTIONS</a></li>
+                <li><a href="/pages/blog.html">BLOG</a></li>
+                <li><a href="./pages/Contact.html">CONTACT</a></li>
+            </ul>
+        </nav>            
+    </header>
 
-    <Main id="main"> 
-        <video src="./vid/VideoMain.mp4" autoplay loop muted class="videoMain"></video>
-    </Main>
 
-    <div class="container">
-    
-        <main class="content">
-            <article class="article">
-                <h1>LEAN 4.0 DIGITAL
-                    SHOP FLOOR MANAGEMENT</h1>
-                <p>Individually scalable for all industries and their specific business sectors.
-                    Process management is not a topic that concerns only one specific department. 
-                    It is a company-wide issue. And every department has its unique processes and concerns. 
-                    Digital Shopfloor System® allows you to model your specific processes painlessly within one central system, 
-                    and so can your colleagues in other departments.</p>
-                <p>The advantages become apparent when teams and their processes are connected like nodes on a circuit board. 
-                    Now you can stream your collaboration and KPIs continuously throughout your entire company.</p>
-                
-            </article>
 
-            <article class="article">
-                <h1>Your Shop Floor Management can do better</h1>
-                <p> With our lean experts consulting we created a Digital Shop Floor solution that leaves nothing to be desired.
-                     Every board imaginable for every team and their specific needs now takes as much space as your typical 55" TV,
-                      or laptop or tablet...</p>
-                
-            </article>
-            <article class="article">
-                <h1>All Your Shop Floor Boards
-                    In The Palm Of Your Hand.</h1>
-                
-                <p>Defining a countermeasure directly at the Gemba or participating a Shop Floor Meeting from your home office, 
-                    the responsive user interface from Digital Shopfloor System brings the entire board to where you are right now.</p>
-                
-            </article>
-        </main>
-
-        <aside class="sidebar">
+    <section class="presentacion">
+        <div class="flex-item1">
+            <h1>Digital Shopfloor Management System® </h1>
+            <p>
+                Superior functionality to view order information and report on your production.
+            </p>
             <div>
-                <img src="./img/Digital SFM 7.png" alt="" >
-                <p>Shop Floor Management 4.0</p>
-            </article>
-            <div>
-                <img src="./img/Digital SFM 6.png" alt="" >
-                <p>Superior functionality to view order information and report on your production</p>
-            </article>
-            <div>
-                <img src="./img/Digital SFM 8.png" alt="" >
-                <p>Remove the documentation burden with shop floor data collection software.</p>
-            </article>
-        </aside>
-
-        <div class="related-post">
-            Automotive
+                <button class="btn-principal" type ="submit">DEMO</button>
+                <button class="btn-secundario" type ="submit">PROJECTS</button>
+            </div>
         </div>
-        <div class="related-post">
-           Mechanical Engginering
+        <div class="flex-item2">
+            <img src="img/caratula2.png" alt="caratula" width="500" height="400">
         </div>
-        <div class="related-post">
-            Aviation
-        </div>
-        <div class="related-post">
-           Logistics
-        </div>
-        <div class="related-post">
-           Electronics 
-        </div>
-
-    </div>
-    
-    <section id= "sec1">
-        <h1 class="sec1Title"> Your Shop Floor Management can do better.</h1>
-        <h2 class="sec1text"> With our lean experts from Staufen consulting we created a digital Shop Floor solution that leaves nothing to be desired. Every board imaginable for every team and their specific needs now takes as much space as your typical 55" TV, or laptop or tablet...</h2>
-        <div class=" sec1Image"></div><img src="img/Digital SFM 3.png" alt="Image">
-
     </section>
 
-    <section id= "sec2">
-        <h1 class="sec2Title"> All Your Shop Floor Boards
-            In The Palm Of Your Hand.</h1>
-        <h2 class="sec2Text"> Defining a countermeasure directly at the Gemba or participating a Shop Floor Meeting from your home office, the responsive user interface from ValueStreamer brings the entire board to where you are right now.</h2>
-        <div class="sec2Image"></div><img src="img/Digital SFM 4.png" alt="Image">
+    
+    
+    <video src="./vid/VideoMain.mp4" autoplay loop muted class="intro-video" ></video>
+  
+    
 
-   
+    <div class="wrapper">
+        <section class="servicios" >
+            <div class="titulo-servicios">
+                <h2>Now you can stream your collaboration and KPIs continuously throughout your entire company.</h2>
+                <p>
+                    The advantages become apparent when teams and their processes are connected like nodes on a circuit board. Now you can stream your collaboration and KPIs continuously throughout your entire company.
+            </div>
+            <div class="tipo-servicios">
+                <div>
+                    <i class='fas fa-tv fa-lg'></i>
+                    <h3>Daily Management</h3>
+                    <p>
+                        Template based or custom designs.Integrate with your existing systems. Unlimited board usage.
+                    
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-laptop"></i>
+                    <h3>More Engagement</h3>
+                    <p>
+                        Easy access to information. 
+                        Collaboration across locations. 
+                        Better flow of ideas. 
+                    </p>
+                </div>
+                <div>
+                    <i class='fas fa-hand-holding-usd fa-lg'></i>
+                    <h3>Increase Your Productivity</h3>
+                    <p>
+                        LImproved problem-solving and decisions.
+                        Clear responsibilities. 
+                        Commitment and transparency.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 
+    
+
+    <footer>
+        <p class="footer-content">
+            Gestione+ &copy;All rights reserved2022
+        </p>
+    </footer>
+    <script>
+       const menu = document.getElementById('menu');
+       window.onscroll = function(){
+           if(window.pageYOffset>10){
+               menu.style.backgroundColor='#fff';
+           }
+           else{
+               menu.style.backgroundColor='initial';
+           }
+       }
+    </script>
 </body>
 </html>
